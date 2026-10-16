@@ -1,0 +1,7 @@
+BOT_TOKEN=PASTE_TELEGRAM_BOT_TOKEN
+ADMIN_ID=8017590244
+GROUP_ID=-1004309235247
+BOT_USERNAME=Ms_blon_bot
+BRAND_URL=https://t.me/movie_time_by
+DATABASE_URL=postgresql://USER:PASSWORD@HOST:5432/postgres?sslmode=require
+WEBHOOK_SECRET=use-a-long-random-secret

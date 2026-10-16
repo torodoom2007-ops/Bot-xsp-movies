@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: movie-time-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        value: "8017590244"
+      - key: GROUP_ID
+        value: "-1004309235247"
+      - key: BOT_USERNAME
+        value: "Ms_blon_bot"
+      - key: BRAND_URL
+        value: "https://t.me/movie_time_by"
+      - key: DATABASE_URL
+        sync: false
+      - key: WEBHOOK_SECRET
+        generateValue: true
